@@ -76,10 +76,11 @@ def calculate():
 
             # If yes, repeat Step 1
             if choice == 'y':
+               choice = choice.lower()
                 continue
 
             # If no, Display “Thank you!” and the program will exit
-            elif choice == 'n':
+            elif choice.lower == 'n':
                 r = Figlet(font = "cybermedium")
                 print(colored(r.renderText('Thank you!'), 'red'))
                 break
