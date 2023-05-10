@@ -49,5 +49,14 @@ def calculate():
             num1 = float(input("\nEnter the first number: "))
             num2 = float(input("Enter the second number: "))
 
+            # Calculate the given operation
+            if choice == '1':
+                result = num1 + num2
+            elif choice == '2':
+                result = num1 - num2
+            elif choice == '3':
+                result = num1 * num2
+            elif choice == '4':
+
 
 
