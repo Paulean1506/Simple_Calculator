@@ -57,6 +57,10 @@ def calculate():
             elif choice == '3':
                 result = num1 * num2
             elif choice == '4':
+                if num2 == 0:
+                    raise ZeroDivisionError
+                else:
+                    result = num1 / num2
 
 
 
