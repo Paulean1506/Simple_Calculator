@@ -71,5 +71,18 @@ def calculate():
 
             # Ask if the user wants to try again or not
             choice = input("\n\033[96mDo you want to try again? 'y' or 'n': ")
+
+            # If yes, repeat Step 1
+            if choice == 'y':
+                continue
+
+            # If no, Display “Thank you!” and the program will exit
+            elif choice == 'n':
+                r = Figlet(font = "cybermedium")
+                print(colored(r.renderText('Thank you!'), 'red'))
+                break
+            else:
+                print("Invalid choice")
+                break
             
 
