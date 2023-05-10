@@ -45,3 +45,9 @@ def calculate():
         try:
             choice = input("\n\033[92mPlease enter your chosen operation (1/2/3/4): ")
 
+            # Ask the user for two numbers
+            num1 = float(input("\nEnter the first number: "))
+            num2 = float(input("Enter the second number: "))
+
+
+
