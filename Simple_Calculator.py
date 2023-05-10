@@ -59,6 +59,8 @@ def calculate():
             elif choice == '4':
                 if num2 == 0:
                     raise ZeroDivisionError
+                    except ZeroDivisionError:
+                    print("\n\033[31mSorry! You are dividing by zero")
                 else:
                     result = num1 / num2
 
