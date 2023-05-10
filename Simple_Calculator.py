@@ -39,3 +39,9 @@ table.add_row(['c.) Multiplication', 3])
 table.add_row(['d.) Division', 4])
 print(table)
 
+# Take input from the user
+def calculate():
+    while True:
+        try:
+            choice = input("\n\033[92mPlease enter your chosen operation (1/2/3/4): ")
+
