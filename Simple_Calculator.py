@@ -26,3 +26,15 @@ print("+------------------Ooo--+")
 print("         |__||__|        ")
 print("          ||  ||         ")
 print("         ooO  Ooo        ")
+
+# Ask the user to choose one of the four math operations
+table = PrettyTable()
+
+table.title = '\033[95mSelect operation:'
+table.field_names = ['Operation', 'Choice']
+table.add_row(['a.) Addition', 1])
+table.add_row(['b.) Subtraction', 2])
+table.add_row(['c.) Multiplication', 3])
+table.add_row(['d.) Division', 4])
+print(table)
+
