@@ -61,19 +61,15 @@ def calculate():
             elif choice == '3':
                 result = num1 * num2
                 print("\n\033[93mThe result of", num1, "*", num2, "is:", result)
-            elif choice == '4':   
+            elif choice == '4':
                 if num2 == 0:
                     raise ZeroDivisionError
                 else:
                     result = num1 / num2
                     print("\n\033[93mThe result of", num1, "/", num2, "is:", result)
-            else:
-                print("Invalid operation, please try again")
                 continue
 
             # Ask if the user wants to try again or not
- while True:
-        try:
             choice = input("\n\033[96mDo you want to try again? 'y' or 'n': ")
 
             # Raise Value error
@@ -81,16 +77,13 @@ def calculate():
                raise ValueError
 
             # If yes, repeat Step 1
-            if choice.lower == 'y':
+            if choice == 'y':
                 continue
 
             # If no, Display “Thank you!” and the program will exit
-            elif choice == 'n':
-                r = Figlet(font = "cybermedium")
-                print(colored(r.renderText('Thank you!'), 'red'))
-                break
             else:
-                print("Invalid choice")
+                r = Figlet(font = "cybermedium")
+                print(colored(r.renderText('\nThank you!'), 'red'))
                 break
            
         # Use Python Function and appropriate Exceptions to capture errors during runtime
