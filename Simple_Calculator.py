@@ -62,5 +62,7 @@ def calculate():
                 else:
                     result = num1 / num2
 
+            # Print result
+            print(result)
 
 
