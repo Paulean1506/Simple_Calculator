@@ -73,10 +73,10 @@ def calculate():
 
             # Ask if the user wants to try again or not
             choice = input("\n\033[96mDo you want to try again? 'y' or 'n': ")
+            choice = choice.lower()
 
             # If yes, repeat Step 1
-            if choice == 'y':
-               choice = choice.lower()
+            if choice.lower == 'y':
                 continue
 
             # If no, Display “Thank you!” and the program will exit
@@ -84,8 +84,10 @@ def calculate():
                 r = Figlet(font = "cybermedium")
                 print(colored(r.renderText('Thank you!'), 'red'))
                 break
-            else:
-                print("Invalid choice")
+            elif:
+                choice.lower not in ["y", "n"]
+                raise ValueError
+            else
                 break
            
         # Use Python Function and appropriate Exceptions to capture errors during runtime
