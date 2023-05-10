@@ -61,7 +61,7 @@ def calculate():
             elif choice == '3':
                 result = num1 * num2
                 print("\n\033[93mThe result of", num1, "*", num2, "is:", result)
-            elif choice == '4':
+            elif choice == '4':   
                 if num2 == 0:
                     raise ZeroDivisionError
                 else:
@@ -72,19 +72,20 @@ def calculate():
                 continue
 
             # Ask if the user wants to try again or not
+ while True:
+        try:
             choice = input("\n\033[96mDo you want to try again? 'y' or 'n': ")
-            choice = choice.lower()
 
             # Raise Value error
-            if choice.lower not in ["y", "n"]
+            if choice not in ["y", "n"]:
                raise ValueError
 
             # If yes, repeat Step 1
-            if choice == 'y':
+            if choice.lower == 'y':
                 continue
 
             # If no, Display “Thank you!” and the program will exit
-            elif choice.lower == 'n':
+            elif choice == 'n':
                 r = Figlet(font = "cybermedium")
                 print(colored(r.renderText('Thank you!'), 'red'))
                 break
