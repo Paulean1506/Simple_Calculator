@@ -49,22 +49,26 @@ def calculate():
             num1 = float(input("\nEnter the first number: "))
             num2 = float(input("Enter the second number: "))
 
-            # Calculate the given operation
+            # Calculate the given operation and display the result
             if choice == '1':
                 result = num1 + num2
+                print("\n\033[93mThe result of", num1, "+", num2, "is:", result)
             elif choice == '2':
                 result = num1 - num2
+                print("\n\033[93mThe result of", num1, "-", num2, "is:", result)
             elif choice == '3':
                 result = num1 * num2
+                print("\n\033[93mThe result of", num1, "*", num2, "is:", result)
             elif choice == '4':
                 if num2 == 0:
                     raise ZeroDivisionError
                 else:
                     result = num1 / num2
-                except ZeroDivisionError:
-                    print("\n\033[31mSorry! You are dividing by zero")
-                
-            # Print result
-            print(result)
+                    print("\n\033[93mThe result of", num1, "/", num2, "is:", result)
+            else:
+                print("Invalid operation, please try again")
+                continue
 
+
+            
 
