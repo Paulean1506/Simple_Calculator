@@ -44,6 +44,8 @@ def calculate():
     while True:
         try:
             choice = input("\n\033[92mPlease enter your chosen operation (1/2/3/4): ")
+            if choice not in ["1", "2", "3", "4"]:
+                raise ValueError
 
             # Ask the user for two numbers
             num1 = float(input("\nEnter the first number: "))
@@ -84,5 +86,13 @@ def calculate():
             else:
                 print("Invalid choice")
                 break
+           
+        # Use Python Function and appropriate Exceptions to capture errors during runtime
+        except ValueError:
+            print("\n\033[31mSorry! Invalid input, please enter one of the given choices")
+        except ZeroDivisionError:
+            print("\n\033[31mSorry! You are dividing by zero")
+            
+calculate()
             
 
