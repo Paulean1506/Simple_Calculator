@@ -32,6 +32,7 @@ table = PrettyTable()
 
 table.title = '\033[95mSelect operation:'
 table.field_names = ['Operation', 'Choice']
+table.align['Operation'] = 'l'
 table.add_row(['a.) Addition', 1])
 table.add_row(['b.) Subtraction', 2])
 table.add_row(['c.) Multiplication', 3])
