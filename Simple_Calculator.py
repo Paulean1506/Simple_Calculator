@@ -69,6 +69,7 @@ def calculate():
                 print("Invalid operation, please try again")
                 continue
 
-
+            # Ask if the user wants to try again or not
+            choice = input("\n\033[96mDo you want to try again? 'y' or 'n': ")
             
 
